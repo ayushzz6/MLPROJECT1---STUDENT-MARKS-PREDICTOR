@@ -1,1 +1,92 @@
-<h1>Welcome to the home page </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Marks Predictor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #2980b9, #6dd5fa);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      max-width: 600px;
+    }
+
+    .container h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .predict-btn {
+      padding: 12px 24px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #2980b9;
+      background-color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .predict-btn:hover {
+      background-color: #2980b9;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 13px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>📚 Student Marks Prediction App</h1>
+    <img src="https://cdn.pixabay.com/photo/2016/03/31/19/14/school-1294034_1280.png" alt="Students studying image">
+    
+    <p>Enter study hours and predict student marks using Machine Learning!</p>
+
+    <a href="http://127.0.0.1:5000/predictdata" class="predict-btn">Predict Data</a>
+
+    <div class="footer">
+      &copy; 2025 Ayush Paul | Powered by Flask & ML
+    </div>
+  </div>
+
+</body>
+</html>
+
